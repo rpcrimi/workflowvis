@@ -1,0 +1,13 @@
+Task1 prev: ['Task7'] next: ['Task3'] resources: []
+Task2 prev: ['Task7'] next: ['Task3'] resources: []
+Task3 prev: ['Task1', 'Task2'] next: ['Task5'] resources: []
+Task4 prev: ['Task7'] next: ['Task5'] resources: []
+Task5 prev: ['Task3', 'Task4'] next: ['Task8'] resources: []
+Workflow Task6:
+Task7 prev: [] next: ['Task1', 'Task2', 'Task4'] resources: []
+Task1 prev: ['Task7'] next: ['Task3'] resources: [] A
+Task2 prev: ['Task7'] next: ['Task3'] resources: [] B
+Task3 prev: ['Task1', 'Task2'] next: ['Task5'] resources: [] C
+Task4 prev: ['Task7'] next: ['Task5'] resources: [] D
+Task5 prev: ['Task3', 'Task4'] next: ['Task8'] resources: [] E
+Task8 prev: ['Task5'] next: [] resources: []
